@@ -45,7 +45,7 @@ public final class Maths {
         }
         return BigDecimal.valueOf(x1Re).setScale(2, RoundingMode.HALF_DOWN).doubleValue();
     }
-    public static Double tonNgativeNumbers(Double number){
+    public static Double toNegativeNumber(Double number){
         Objects.requireNonNull(number,"number require non null");
         return   Double.parseDouble("-" + Math.abs(number));
     }
@@ -55,7 +55,7 @@ public final class Maths {
 //        double b = -5.149;
 //        double c = 2.165;
 //
-//        double t = oneVariableCubicEquation(a, b, c, tonNgativeNumbers(1.054912281));
-//        System.out.println(t + "    " + tonNgativeNumbers(1.054912281));
+//        double t = oneVariableCubicEquation(a, b, c, toNegativeNumber(1.054912281));
+//        System.out.println(t + "    " + toNegativeNumber(1.054912281));
 //    }
 }
